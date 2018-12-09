@@ -1,0 +1,87 @@
+﻿@model bookyourdoctor.doctor
+@{
+    ViewBag.Title = "Dentist Details";
+}
+<head>
+    <style type="text/css">
+
+        body {
+            background-image: url(../images/den.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+        }
+
+        .registration {
+            color: black;
+            font-size: 40px;
+            font-family: Agency FB;
+            font-weight: 700;
+            border-bottom-style: ridge;
+        }
+
+        .row {
+        }
+
+        .btn.hover {
+            background-color: aqua;
+        }
+
+        label {
+            font-size: 22px;
+        }
+
+        .btn-danger {
+            border-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3" id=" form" style=" background-color: #acbdca;height:100% 100%;opacity:0.9;
+
+    ">
+                <center style="text-align:center ;
+	padding-top: 60px;padding-bottom:60px"><b class="registration">DENTISTS</b></center>
+                @{
+                    doctor dg = new doctor();
+                    IEnumerable<doctor> lst = dg.doctorsspec("Dentist");
+                }
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <table class="table table-bordered table-condensed">
+                        <tbody>
+                            <tr>
+                                <th style="font-family:Arial;font-size:24px">NAME</th>
+                                <th style="font-family:Arial;font-size:24px">CLINIC NAME</th>
+                                <th style="font-family:Arial;font-size:24px">HOSPITAL NAME</th>
+                                <th style="font-family:Arial;font-size:24px">DETAILS</th>
+                            </tr>
+                            @foreach (var item in lst.ToList())
+                            {
+                                <tr>
+                                    <td style="font-family:Arial;font-size:24px">@Html.DisplayFor(modelItem => item.name)</td>
+                                    <td style="font-family:Arial;font-size:24px">@Html.DisplayFor(modelItem => item.clinic_name)</td>
+                                    <td style="font-family:Arial;font-size:24px">@Html.DisplayFor(modelItem => item.hospital_name)</td>
+                                    <td style="font-family:Arial;font-size:24px">@Html.ActionLink("Details", "Details", "doctors", new { ide = item.doctor_id }, null)</td>
+                                </tr>
+
+                            }
+                        </tbody>
+                    </table>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+

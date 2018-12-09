@@ -1,0 +1,117 @@
+﻿@model IEnumerable<bookyourdoctor.doctor_scedule>
+@{
+    ViewBag.Title = "Index";
+}
+<head>
+    <style type="text/css">
+
+        body {
+            background-image: url(../images/qqq.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% 100%;
+        }
+
+        .registration {
+            color: black;
+            font-size: 40px;
+            font-family: Agency FB;
+            font-weight: 700;
+            border-bottom-style: ridge;
+        }
+
+        .row {
+        }
+
+        .btn.hover {
+            background-color: aqua;
+        }
+
+        label {
+            font-size: 22px;
+        }
+
+        .btn-danger {
+            border-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2" id=" form" style=" background-color: #acbdca;height:100% 100%;opacity:0.9;
+
+    ">
+                <center style="text-align:center ;
+	padding-top: 60px;padding-bottom:60px"><b class="registration">SCHEDULE</b></center>
+
+
+                <p>
+                    @Html.ActionLink("Create New", "Create")
+                </p>
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.clinic_start_time)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.hospital_start_time)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.clinic_end_time)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.hospital_end_time)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.Clinic_day)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.hospial_day)
+                        </th>
+                        <th></th>
+                    </tr>
+                    @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.clinic_start_time)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.hospital_start_time)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.clinic_end_time)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.hospital_end_time)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Clinic_day)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.hospial_day)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", "doctor_scedule", new { ide = item.id }, null) |
+                    @Html.ActionLink("Details", "Details", "doctor_scedule", new { ide = item.id }, null)  |
+                    @Html.ActionLink("Delete", "Delete", "doctor_scedule", new { ide = item.id }, null)
+                </td>
+            </tr>
+}
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+

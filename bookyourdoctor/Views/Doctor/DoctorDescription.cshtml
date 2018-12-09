@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "DOCTORS PAGE";
+}
+<div class="container" style="padding-top:34px">
+    <h2>
+        You Want to visit:
+    </h2>
+    
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>1- DOCTOR SCHEDULE</h3>
+            <p>You can have a look at your schedule</p>
+            <p>Want to have  a look at clinic schedule</p>
+            <p>
+                Click to look at clinic schedule
+                @Html.ActionLink("Doctor Clinic Schedule", "DoctorClinicSchedule","Doctor")
+            </p>
+            <p>Want to have  a look at hospital schedule</p>
+            <p>
+                Click to look at hospital schedule
+                @Html.ActionLink("Doctor Hospital Schedule", "DoctorHospitalSchedule", "Doctor")
+            </p>
+
+        </div>
+        <div class="col-lg-4">
+            <img src="../img/doctor2.jpg" style="width: 600px;
+    max-height: 200px;" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="../img/doctor3.jpg" style="    max-height: 200px;
+    width: 500px;" />
+        </div>
+        <div class="col-lg-6">
+            <h3> DOCTOR APPOINTMENT REQUESTS </h3>
+            <p>You can have a look at your patients requests</p>
+            <p>Want to have  a look at clinic requests</p>
+            <p>
+                Click to look at clinic requests
+                @Html.ActionLink("Doctor Clinic Requests", "DoctorClinicRequests", "Doctor")
+            </p>
+            <p>Want to have  a look at hospital requests</p>
+            <p>
+                Click to look at hospital requests
+                @Html.ActionLink("Doctor Hospital Requests", "DoctorHospitalRequests", "Doctor")
+            </p>
+        </div>
+    </div>
+    

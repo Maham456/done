@@ -1,0 +1,142 @@
+﻿
+@{
+    ViewBag.Title = "Doctor's Information";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:aliceblue">
+
+    <div class="container">
+        <h2 style="padding-top:34px;text-align:center;">
+            Doctor's Information
+        </h2>
+        <br>
+        <a href="~/Admin/AddDoctor" class="btn btn-info" role="button">Add Doctor</a>
+        <br><br>
+
+            <div class="table-responsive">
+                <table class="table  table-hover table-bordered ">
+                    <thead>
+                        <!--
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+
+                th, td {
+                    padding: 10px;
+                }
+
+             <table style="width:100%" align="center">
+            </style>-->
+                    <thead>
+                        <tr>
+                            <th>Serial No.</th>
+                            <th>Doctor's Name</th>
+                            <th>Department</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Update Doctor</th>
+                            <th>Delete Doctor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ahmad ali</td>
+                            <td>Cardiology</td>
+                            <td>35</td>
+                            <td>New York</td>
+                            <td>murtaz@thememinister.com</td>
+                            <td>019833333222</td>
+                            <td><a href="~/Admin/UpdateDoctor">Update</a></td>
+                            <td><a href="~/Admin/DeleteDoctor">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Bushra shakeel</td>
+                            <td>Cardiology</td>
+                            <td>35</td>
+                            <td>New York</td>
+                            <td>murtaz@thememinister.com</td>
+                            <td>019833333222 </td>
+                            <td><a href="~/Admin/UpdateDoctor">Update</a></td>
+                            <td><a href="~/Admin/DeleteDoctor">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Hiba Azam</td>
+                            <td>Gynecology</td>
+                            <td>35</td>
+                            <td>New York</td>
+                            <td>murtaz@thememinister.com</td>
+                            <td>019833333222 </td>
+                            <td><a href="~/Admin/UpdateDoctor">Update</a></td>
+                            <td><a href="~/Admin/DeleteDoctor">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ayesha Umar</td>
+                            <td>Gynecology</td>
+                            <td>35</td>
+                            <td>New York</td>
+                            <td>murtaz@thememinister.com</td>
+                            <td>019833333222 </td>
+                            <td><a href="~/Admin/UpdateDoctor">Update</a></td>
+                            <td><a href="~/Admin/DeleteDoctor">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Nida Iqbal</td>
+                            <td>Gynecology</td>
+                            <td>35</td>
+                            <td>New York</td>
+                            <td>murtaz@thememinister.com</td>
+                            <td>019833333222 </td>
+                            <td><a href="~/Admin/UpdateDoctor">Update</a></td>
+                            <td><a href="~/Admin/DeleteDoctor">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Adil khan</td>
+                            <td>Cardiology</td>
+                            <td>35</td>
+                            <td>New York</td>
+                            <td>murtaz@thememinister.com</td>
+                            <td>019833333222 </td>
+                            <td><a href="~/Admin/UpdateDoctor">Update</a></td>
+                            <td><a href="~/Admin/DeleteDoctor">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Wahaj Sikandar</td>
+                            <td>Dermatology</td>
+                            <td>35</td>
+                            <td>New York</td>
+                            <td>murtaz@thememinister.com</td>
+                            <td>019833333222 </td>
+                            <td><a href="~/Admin/UpdateDoctor">Update</a></td>
+                            <td><a href="~/Admin/DeleteDoctor">Delete</a></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+            </div>
+    </div>
+</body>
+</html>
+
+

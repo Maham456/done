@@ -1,0 +1,86 @@
+﻿@model bookyourdoctor.doctor
+
+@{
+    ViewBag.Title = "DoctorWelcome1";
+}
+
+
+<body style="background-image:url(../images/qqq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:400px;
+  ">
+    <style>
+
+
+        .head {
+            font-family: Arial;
+            font-size: 44px;
+            margin-top: 50px;
+            color: white;
+        }
+
+        .img-circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: white;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            background-color: darkgrey;
+            border-style: solid;
+            border-color: darkgrey;
+            opacity: 0.9;
+        }
+
+            .img-circle:hover {
+                border-style: solid;
+                border-color: white;
+                background-color: darkturquoise;
+            }
+
+        #circle2 {
+            width: 300px;
+            height: 350px;
+            border-radius: 50%;
+            background: white;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 450px;
+        }
+
+        #circle2 {
+            width: 300px;
+            height: 350px;
+            border-radius: 50%;
+            background: white;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 950px;
+        }
+    </style>
+    <h1 class=" head" style="text-align:center"> <u> <b> DOCTORS HANDLER</b> </u> </h1>
+    <div class="row ">
+        @Html.HiddenFor(model => model.doctor_id)
+        <div class="img-circle col-md-2.5" style="margin-left:20px">
+            <h2 class="text" style=" color:white; margin-top:115px;text-align:center "><b>@Html.ActionLink("CREATE SHEDULE", "Create", "doctor_scedule", new { ide = Model.doctor_id }, new { })</b></h2>
+        </div>
+
+
+        <div class="img-circle col-md-2.5" style="margin-left:50px">
+            <h2 class="text" style="color:white;margin-top:115px;text-align:center"><b>@Html.ActionLink("VIEW REQUESTS", "Viewrequests", "doctor_scedule", new { ide = Model.doctor_id }, new { })</b></h2>
+        </div>
+
+
+        <div class="img-circle col-md-2.5" style="margin-left:50px">
+            <h2 class="text" style="color:white;margin-top:115px;text-align:center"><b>@Html.ActionLink("VIEW SHEDULE", "ViewShedule", "doctor_scedule", new { ide = Model.doctor_id }, new { })</b></h2>
+        </div>
+        <div class="img-circle col-md-2.5" style="margin-left:50px">
+            <h2 class="text" style="color:white;margin-top:115px;text-align:center"><b>@Html.ActionLink("EDIT PROFILE", "Edit", "doctors", new { ide = Model.doctor_id }, new { })</b></h2>
+        </div>
+        
+        
+    </div>
+
+
+</body>

@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "UpdateDoctor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:aliceblue">
+
+
+    <div class="container">
+        <div class="col-md-4 col-lg-offset-4">
+            <h2 style="padding-top:34px;text-align:center;">Update DOCTOR</h2>
+        </div><br />
+        <!-- <div class="row container-fluid " >
+        <div class="col-md-5 col-lg-offset-4" >
+                                    <label class="control-label col col-sm-2 col-lg-push-3" for="email"> Email address:</label>
+                        <input type="email" class="form-control" id="Email" placeholder="Email-Id" required>
+
+                        <br />
+                        <label class="control-label col col-sm-2 col-lg-push-3" for="pwd"> Password:</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                        <br />-->
+
+        <br /><br /><br />
+        <div class="container-fluid">
+
+            <br>
+
+            <form class="form-horizontal">
+
+
+                <br>
+                <div class="col-md-11" align="center">
+                    <label class="control-label col col-sm-2 col-lg-push-3 " for="email"> First Name:</label>
+                    <input type="text" name="firstname" id="First name" placeholder="First Name" class="form-control" required>
+
+                    <br>
+                    <label class="control-label col-sm-2 col-lg-push-3" for="email"> Last Name:</label>
+                    <input type="text" name="lastname" id="Last name" placeholder="Last Name" class="form-control" required>
+                    <br>
+                    <label class="control-label col col-sm-2 col-lg-push-3" for="email"> Specialization:</label>
+                    <input type="text" name="Specialization" id="Specialization" placeholder="Specialization" class="form-control" required>
+                    <br>
+                    <label class="control-label col col-sm-2 col-lg-push-3" for="email"> Email address:</label>
+                    <input type="email" class="form-control" id="Email" placeholder="Email-Id" required>
+
+                    <br />
+                    <label class="control-label col col-sm-2 col-lg-push-3" for="pwd"> Password:</label>
+                    <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                    <br />
+                    <label class="control-label col col-sm-2 col-lg-push-3" for="email"> Clinic Name:</label>
+                    <input type="text" name="Clinic Name" id="Clinic Name" placeholder="Clinic Name" class="form-control">
+                    <br>
+                    <label class="control-label col col-sm-2 col-lg-push-3" for="email"> Hospital Name:</label>
+                    <input type="text" name="Hospital Name" id="Hospital Name" placeholder="Hospital Name" class="form-control" required>
+                    <br>
+
+
+                </div>
+                <div class="col-md-11" align="center">
+                    <div class="checkbox">
+                        <label> <input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-12" align="center">
+                    <br>
+                    <a href="~/Admin/FrontView" class="btn btn-info" role="button">Update</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+

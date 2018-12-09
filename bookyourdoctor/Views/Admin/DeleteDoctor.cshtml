@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "DeleteDoctor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: aliceblue ">
+    <div class="container">
+       <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        </style>
+        <div class="col-md-5 col-lg-offset-4">
+            <h2 style="padding-top:34px; ">
+            DELETE DOCTOR
+            </h2>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class=" container-fluid ">
+            <br>
+            <br>
+
+            <table style="width:100%">
+                <tr>
+                    <th>Name</th>
+                    <th>Specialization</th>
+                    <th>ID</th>
+                    <th>Hospital Name</th>
+                    <th>Delete</th>
+
+                </tr>
+                <tr>
+                    <td>Maham Asif</td>
+                    <td>Cardiologist</td>
+                    <td>12/13/2018</td>
+                    <td>Sheikh Zaid</td>
+                    <td><button type="button" onclick="return confirm('Are you sure you want to Delete')" class="btn  btn-default">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Nida Iqbal</td>
+                    <td>Cardiologist</td>
+                    <td>12/13/2018</td>
+                    <td>Sheik Zaid</td>
+                    <td><button type="button" onclick="return confirm('Are you sure you want to  Delete')" class="btn  btn-default">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Hiba Azam</td>
+                    <td>Gynecologist</td>
+                    <td>13/13/2018</td>
+                    <td>Doctor Hospital</td>
+                    <td><button type="button" onclick="return confirm('Are you sure you want to Delete')" class="btn  btn-default">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Syeda Khadija</td>
+                    <td>Child Specialist</td>
+                    <td>14/13/2018</td>
+                    <td>Doctor Hospital</td>
+                    <td><button type="button" onclick="return confirm('Are you sure you want to Delete')" class="btn  btn-default">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Ahmad</td>
+                    <td>Cardiologist</td>
+                    <td>13/13/2018</td>
+                    <td>Ganga Raam</td>
+                    <td>
+                        <button type="button" onclick="return confirm('Are you sure you want to Delete')" class="btn  btn-default">Delete</button>
+
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+</body>
+</html>
+
+
+

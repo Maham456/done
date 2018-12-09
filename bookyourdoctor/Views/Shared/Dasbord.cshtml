@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>@ViewBag.Title - Book The Doctor</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="margin-top:-45px">
+        <div class="container">
+            <img src="../images/doctor.png" style="padding :10px" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto" style="padding-top:17px">
+                    <li style="padding-right:70px">@Html.ActionLink("Home", "Home", "admins")</li>
+                    <li style="padding-right:70px">@Html.ActionLink("Doctor's List", "DoctorInformation", "admins")</li>
+                    <li style="padding-right:70px">@Html.ActionLink("Add Doctor", "AddDoctor", "admins")</li>
+                    <li style="padding-right:70px">@Html.ActionLink("Patient's List", "PatientInformation", "admins")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    @RenderBody()
+
+   <!-- <footer style="background-size: cover;
+height:100% 100%;
+                       background-position: center center;
+                       background-repeat: no-repeat;
+                       position: relative;
+                       color: #fff !important;
+                       background: #6cbbda;">
+        <div class="container">
+            <div class="row" style="padding-top: 20px">
+                <div class="col-lg-4">
+
+                    <span style="font-size:26px">BOOK MY DOCTOR</span> <hr />
+                    <p>
+                        The patients will not have to wait for hours to see the doctor if they start using this application, the system of waiting for hours in a queue will be finished.
+                    </p>
+                    <img src="../images/fotterlogo.png" style="height:76px; text-align:center; width :230px" />
+                </div>
+                <div class="col-lg-4">
+                    <span style="font-size:26px">Departments</span> <hr />
+                    <ul>
+                        <li>Child Specialist</li>
+                        <li>Neuro Sergon</li>
+                        <li>Eye Specialist</li>
+                        <li>Heart Specialist</li>
+                        <li>Dentist</li>
+                        <li>Psycologist</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <span style="font-size:26px">Contact Us</span> <hr />
+                    <p>
+                        Book my doctor is your one-step Doctor appointment solution in contacting your Doctor! get in touch with usfor all your queries.
+                    </p>
+                    <img src="../images/facebook.png" />
+                    <img src="../images/twitter.png" />
+                    <img src="../images/instagram.png" />
+                </div>
+            </div>
+        </div>
+
+    </footer>-->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿@model bookyourdoctor.admin
+@{
+    ViewBag.Title = "Edit";
+}
+
+@{
+    ViewBag.Title = "Create";
+}
+<head>
+    <style type="text/css">
+
+        body {
+            background-image: url(../images/qqq.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1700px;
+        }
+
+        .registration {
+            color: black;
+            font-size: 40px;
+            font-family: Agency FB;
+            font-weight: 700;
+            border-bottom-style: ridge;
+        }
+
+        .row {
+        }
+
+        .btn.hover {
+            background-color: aqua;
+        }
+
+        label {
+            font-size: 22px;
+        }
+
+        .btn-danger {
+            border-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3" id=" form" style=" background-color: #acbdca;height:0% 100%;opacity:0.9;
+
+    ">
+                <center style="text-align:center ;
+	padding-top: 60px;padding-bottom:60px"><b class="registration">ADMIN</b></center>
+                @using (Html.BeginForm())
+    {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.email)
+                <div class="form-group">
+                    @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Save" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+}
+                <div>
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+

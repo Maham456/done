@@ -1,0 +1,72 @@
+﻿@model bookyourdoctor.admin
+@{
+    ViewBag.Title = "Details";
+}
+
+@{
+    ViewBag.Title = "Create";
+}
+<head>
+    <style type="text/css">
+
+        body {
+            background-image: url(../images/qqq.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1700px;
+        }
+
+        .registration {
+            color: black;
+            font-size: 40px;
+            font-family: Agency FB;
+            font-weight: 700;
+            border-bottom-style: ridge;
+        }
+
+        .row {
+        }
+
+        .btn.hover {
+            background-color: aqua;
+        }
+
+        label {
+            font-size: 22px;
+        }
+
+        .btn-danger {
+            border-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3" id=" form" style=" background-color: #acbdca;height:0% 100%;opacity:0.9;
+
+    ">
+                <center style="text-align:center ;
+	padding-top: 60px;padding-bottom:60px"><b class="registration">ADMIN</b></center>
+                <div>
+                    
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.password)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.password)
+                        </dd>
+                    </dl>
+                </div>
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.email }) |
+                    @Html.ActionLink("Back to List", "Index")
+                </p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+

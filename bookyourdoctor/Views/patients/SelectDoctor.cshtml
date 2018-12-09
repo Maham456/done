@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "SelectDoctor";
+}
+<body style="background-image:url(../images/qqq.jpg);
+  background-repeat: no-repeat;
+  background-size:100% 100%;">
+    <style>
+
+
+        .square {
+            height: 250px;
+            width: 300px;
+            background-color: #acbdca;
+            position: relative;
+            left: 50px;
+            border-radius: 50%;
+            top: 45px;
+        }
+
+        .square1 {
+            height: 250px;
+            width: 300px;
+            background-color: #acbdca;
+            position: relative;
+            left: 500px;
+            border-radius: 50%;
+            bottom: 500px;
+        }
+
+        .square2 {
+            height: 250px;
+            width: 300px;
+            background-color: #acbdca;
+            position: relative;
+            left: 950px;
+            border-radius: 50%;
+            bottom: 1030px;
+        }
+    </style>
+    <div style="height:100% 100%">
+        <div class="square" style="padding-left:30px">
+            <h3 style="padding-left:55px; padding-top:30px">@Html.ActionLink("Cardiologists", "CardiologistsDetails", "patients")</h3>
+            <p>
+                Cardiology is a branch of medicine<br> dealing with disorders of the heart as<br> well as parts of the circulatory system.<br>
+                The field includes medical diagnosis<br> and treatment of congenital heart defects.
+            </p>
+        </div>
+        <div class="square" style="padding-left:30px">
+            <h3 style="padding-left:55px; padding-top:30px">@Html.ActionLink("Child Specialist", "ChildSpecialistDetails", "patients")</h3>
+            <p>
+                Child life specialists are <br> pediatric health care professionals<br> who work with children to help<br>them cope with the challenges <br>of hospitalization, illness, and disability..
+            </p>
+        </div>
+        <div class="square1" style="padding-left:30px">
+            <h3 style="padding-left:55px; padding-top:30px">@Html.ActionLink("Gynecologist", "GynecologistDetails", "patients")</h3>
+            <p>
+                A gynecologist treats the<br>overall health of their female patients<br>treating problems and diseases of <br>the female reproductive system.<br>A gynecologist is an obstetrician as<br> well.
+            </p>
+        </div>
+        <div class="square1" style="padding-left:30px">
+            <h3 style="padding-left:55px; padding-top:30px">@Html.ActionLink("Dermatologist", "DermatologistDetails", "patients")</h3>
+            <p>
+                A dermatologist is a doctor who<br> specializes in the study of skin <br> and the treatment of skin diseases.<br> A physician who specializes in the<br> diagnosis and treatment of skin problems.
+            </p>
+        </div>
+        <div class="square2" style="padding-left:30px">
+            <h3 style="padding-left:55px; padding-top:30px">@Html.ActionLink("Dentist", "DentistDetails", "patients")</h3>
+            <p>
+                One who is skilled in and licensed<br> to practice the prevention, diagnosis,<br> and treatment of diseases, injuries,<br> and malformations of the teeth, <br>jaws, and mouth and who makes and<br> inserts false teeth.
+
+            </p>
+        </div>
+        <div class="square2" style="padding-left:30px">
+            <h3 style="padding-left:55px; padding-top:30px">@Html.ActionLink("Psychologist", "PsychologistDetails", "patients")</h3>
+            <p>
+                Clinical psychologists diagnose and<br> treat individuals suffering from<br> psychological distress and mental illness.<br> They also perform psychotherapy and<br> develop treatment plans.
+            </p>
+        </div>
+    </div>
+</body>
+
+
+

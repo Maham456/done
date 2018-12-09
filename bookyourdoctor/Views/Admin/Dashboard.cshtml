@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+
+
+<body style="background-image:url(../images/qqq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:400px;
+  ">
+    <style>
+
+
+        .head {
+            font-family: Arial;
+            font-size: 44px;
+            margin-top: 50px;
+            color: white;
+        }
+
+        .img-circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: white;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            background-color: darkgrey;
+            border-style: solid;
+            border-color: darkgrey;
+            opacity: 0.9;
+        }
+
+            .img-circle:hover {
+                border-style: solid;
+                border-color: white;
+                background-color: darkturquoise;
+            }
+
+        #circle2 {
+            width: 300px;
+            height: 350px;
+            border-radius: 50%;
+            background: white;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 450px;
+        }
+
+        #circle2 {
+            width: 300px;
+            height: 350px;
+            border-radius: 50%;
+            background: white;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 950px;
+        }
+    </style>
+    <h1 class=" head" style="text-align:center"> <u> <b>ADMIN</b> </u> </h1>
+    <div class="row ">
+        <a href="http://localhost:58872/Admin/PatientInformation">
+            <div class="img-circle col-md-2.5" style="margin-left:400px">
+                <h2 class="text" style=" color:white; margin-top:115px;text-align:center "><b>VIEW PATIENTS</b></h2>
+            </div>
+        </a>
+        <a href="http://localhost:58872/Admin/DoctorInformation">
+            <div class="img-circle col-md-2.5" style="margin-left:90px">
+                <h2 class="text" style="color:white;margin-top:115px;text-align:center"><b>VIEW DOCTORS</b></h2>
+            </div>
+        </a>
+
+
+    </div>
+
+
+</body>
+

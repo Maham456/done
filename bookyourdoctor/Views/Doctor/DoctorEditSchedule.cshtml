@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "DoctorEditSchedule";
+}
+<body style="background-image:url(../images/ss.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:690px;">
+    <div class=" container">
+        <h1 style="margin-top:50px;font-family:Arial;font-size:35px; margin-bottom:50px; text-align:center"><b>EDIT SCHEDULE</b></h1>
+        <h1 style="margin-top:30px;font-family:Arial;font-size:30px; margin-bottom:50px; text-align:center"><b>HOSPITAL SCHEDULE</b></h1>
+        <table class="table table-bordered table-condensed">
+            <tbody>
+                <tr>
+                    <th style="font-family:Arial;font-size:24px">Day</th>
+                    <th style="font-family:Arial;font-size:24px">Time Slot</th>
+                    <th style="font-family:Arial;font-size:24px">Submit</th>
+                    <th style="font-family:Arial;font-size:24px">Reset</th>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" /><select class="form-control text" style="height:50px">
+                            <option value="Monday" style="font-family:Arial;font-size:18px">Monday</option>
+                            <option value="Tuesday" style="font-family:Arial;font-size:18px">Tuesday</option>
+                            <option value="Wednesday" style="font-family:Arial;font-size:18px">Wednesday</option>
+                            <option value="Thursday" style="font-family:Arial;font-size:18px">Thursday</option>
+                            <option value="Friday" style="font-family:Arial;font-size:18px">Friday</option>
+                            <option value="Saturday" style="font-family:Arial;font-size:18px">Saturday</option>
+                        </select>
+                    </td>
+
+                    <td><input style="font-family:Arial;font-size:18px" ; type="time" class="form-control" /></td>
+                    <td><input style="font-family:Arial;font-size:18px" type="submit" class="btn btn-primary" value="Submit" onclick="return confirm('Are you sure you want to submit')" /></td>
+                    <td>
+                        <input style="font-family:Arial;font-size:18px" type="reset" name="" class="btn btn-danger" value="Reset" onclick="return confirm('Are you sure you want to reset')" />
+                    </td>
+                    <!--<td style="width:10%">X:</td>
+                    <td><input type="text" style="width:90%" /></td>-->
+                </tr>
+            </tbody>
+        </table>
+        <h1 style="margin-top:30px;font-family:Arial;font-size:30px;  margin-top:50px;margin-bottom:50px; text-align:center"><b>CLINIC SCHEDULE</b></h1>
+        <table class="table table-bordered table-condensed">
+            <tbody>
+                <tr>
+                    <th style="font-family:Arial;font-size:24px">Day</th>
+                    <th style="font-family:Arial;font-size:24px">Time Slot</th>
+                    <th style="font-family:Arial;font-size:24px">Submit</th>
+                    <th style="font-family:Arial;font-size:24px">Reset</th>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" /><select class="form-control text" style="height:50px">
+                            <option value="Monday" style="font-family:Arial;font-size:18px">Monday</option>
+                            <option value="Tuesday" style="font-family:Arial;font-size:18px">Tuesday</option>
+                            <option value="Wednesday" style="font-family:Arial;font-size:18px">Wednesday</option>
+                            <option value="Thursday" style="font-family:Arial;font-size:18px">Thursday</option>
+                            <option value="Friday" style="font-family:Arial;font-size:18px">Friday</option>
+                            <option value="Saturday" style="font-family:Arial;font-size:18px">Saturday</option>
+                        </select>
+                    </td>
+                    <td><input style="font-family:Arial;font-size:18px" type="time" class="form-control" /></td>
+                    <td><input style="font-family:Arial;font-size:18px" type="submit" class="btn btn-primary" value="Submit" onclick="return confirm('Are you sure you want to submit')" /></td>
+                    <td>
+                        <input style="font-family:Arial;font-size:18px" type="reset" name="" class="btn btn-danger" value="Reset" onclick="return confirm('Are you sure you want to reset')" />
+                    </td>
+                    <!--<td style="width:10%">X:</td>
+                    <td><input type="text" style="width:90%" /></td>-->
+                </tr>
+            </tbody>
+        </table>
+        <input style="width:30%;margin-left:830px;Arial;font-size:24px" type="submit" class="btn btn-primary" value="Edit" onclick="return confirm('Are you sure you want to edit')" />
+        <div class="form-group">
+            <div class="col-md-7 colset-md-offset-7">
+
+                <div class="col-md-7 colset-md-offset-7">
+                    <a href="http://localhost:58872/Doctor/DoctorWelcome">
+                        <input style="margin-top:-65px;height:50px;width:120px" type="button" name="" class="btn " value="BACK" />
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </body>
+

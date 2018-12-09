@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "DoctorReset";
+}
+<head>
+    <style type="text/css">
+        body {
+            background-image: url(../images/qqq.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+        }
+
+        .registration {
+            color: black;
+            font-size: 40px;
+            font-family: Agency FB;
+            font-weight: 700;
+            border-bottom-style: ridge;
+        }
+
+        .row {
+        }
+
+        label {
+            font-size: 22px;
+        }
+
+        .btn-danger {
+            border-radius: 0px;
+        }
+   </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3" id=" form" style=" background-color: white;height:800px;opacity:0.9;
+
+    ">
+
+                <center style="text-align:center ;
+	padding-top: 60px;padding-bottom:60px"><b class="registration">RESET PASSWORD</b></center>
+                <form>
+                   
+                    <div class="form-group">
+                        <label>Doctor ID :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Doctor ID" style="font-size: 22px;height:50px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Email :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Your Email" style="font-size: 22px;height:50px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Password :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Your Password" style="font-size: 22px;height:50px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Confirm Password" style="font-size: 22px;height:50px;min-width:550px" />
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <a href="http://localhost:58872/Doctor/DoctorLogin">
+                            <input style="height:50px;width:120px" type="button" name="" class="btn " value="Reset" onclick="return confirm('Are you sure you want to reset')" />
+                        </a>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+
+
+
+
+

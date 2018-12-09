@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML>
+<!-- You will not be able to see this text. -->
+
+@{   
+
+    ViewBag.Title = "Index";
+}
+
+<head>
+    <style type="text/css">
+        body {
+            background-color: cadetblue;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+        }
+
+        .registration {
+            color: black;
+            font-size: 55px;
+            font-family: Agency FB;
+            font-weight: 700;
+            border-bottom-style: ridge;
+        }
+
+        .row {
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        .btn-danger {
+            border-radius: 0px;
+        }
+    </style>
+    var result = confirm("Want to delete?");
+    if (result) {
+    //Logic to delete the item
+    }
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3" id=" form"  style=" background-color: white;min-height:700px;
+
+    "
+            >
+           
+                <center style="text-align:center ;
+	padding-top: 60px;padding-bottom:60px" ><b class="registration">Registration Form</b></center>
+                <form>
+                    <div class="form-group">
+                        <label>Name :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Your Name" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Email :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Your Name" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Password :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Your Name" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Confirm Passworf" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Doctor ID :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Doctor ID" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>MBBS Code :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter MBBS code" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Specialization :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Specialization" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Practicing Years :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Practising Years" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Clinic Name :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Clinic Name" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Clinic Address :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Clinic Address" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Hospital Name :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Hospital Name" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Hospital Address :</label>
+                        <input type="text" name="name" class="form-control text" placeholder="Enter Hospital Address" style="height:40px;min-width:550px" />
+                    </div>
+                    <div class="form-group">
+                        <label>Select Gender :</label>
+                        <select class="form-control text" style="height:40px;min-width:550px">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="" class="btn btn-primary" value="Submit" onclick="return confirm('Are you sure you want to submit')" />
+                    
+                        <input type="reset" name="" class="btn btn-danger" value="Reset"onclick="return confirm('Are you sure you want to reset')" />
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+   <!-- <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>-->
+
+    
+
+    
+
+</body>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
